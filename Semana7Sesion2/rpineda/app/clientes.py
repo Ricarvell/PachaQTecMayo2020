@@ -4,11 +4,5 @@ class clientes:
         self.nombreCliente = nombreCliente
         self.nroIdentificacionCliente = nroIdentificacionCliente
         self.direccionCliente = direccionCliente
-    def toDic(self):
-        d = {
-            "idCliente": self.idCliente,
-            "nombreCliente": self.nombreCliente,
-            "nroIdentificacionCliente": self.nroIdentificacionCliente,
-            "direccionCliente": self.direccionCliente
-        }
-        return d
+
+  s

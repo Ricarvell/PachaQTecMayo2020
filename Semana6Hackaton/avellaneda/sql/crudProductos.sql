@@ -5,7 +5,7 @@
 INSERT INTO productos (nombreProducto, valorProducto, igvProducto) VALUES ('cuchara', '10.50', 1);
 
 #BUSCAR ELEMENTO
-SELECT idproductos, nombreProducto AS Nombre, valorProducto AS Valor, igvProducto AS IGV FROM productos;
+SELECT idproductos, nombreProducto AS Nombre, valorProducto AS Valor, ialumnosgvProducto AS IGV FROM productos;
 
 #BUSCAR ELEMENTO POR VARIABLE QUE SE PIDA, EN ESTE CASO ES EL NOMBRE
 SELECT idproductos, nombreProducto AS Nombre, valorProducto AS Valor, igvProducto AS IGV FROM productos WHERE nombreProducto = 'cuchara';

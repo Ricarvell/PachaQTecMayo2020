@@ -30,6 +30,7 @@ def mantenimientoCliente():
                         "- Borrar Cliente\t": 5}
     menuCliente = utils.Menu("Menu Cliente", dicMenuCliente)
     resMenuCliente = menuCliente.mostrarMenu()
+
     if(resMenuCliente == 1):
         log.debug("buscamos cliente")
         conn = conexion.conexionBDD(1)
@@ -38,9 +39,9 @@ def mantenimientoCliente():
         print("\tID\t\tNombre\t\t\tDNI\t\t\tDireccion")
         for row in resConn:
             print(f"\t{str(row[0])}\t\t{str(row[1])}\t\t{str(row[2])}\t\t{str(row[3])}")
-
         input("¿Continuar?")
         print(resConn)
+
     elif(resMenuCliente == 2):
         log.debug("buscamos cliente por DNI")
         print("Escribe el numero de DNI")
@@ -53,6 +54,7 @@ def mantenimientoCliente():
             print(f"\t{str(row[0])}\t\t{str(row[1])}\t\t{str(row[2])}\t\t{str(row[3])}")
         input("¿Continuar?")
         print(resConn)
+
     elif(resMenuCliente == 3):
         log.debug("buscamos cliente")
         conn = conexion.conexionBDD(1)
@@ -78,6 +80,7 @@ def mantenimientoCliente():
             print("Hubo un error :( ")
         
         input("¿Desea continuar?")
+        
     elif(resMenuCliente == 4):
         print("##Creación de un cliente##")
         print("Escriba el nombre del cliente")

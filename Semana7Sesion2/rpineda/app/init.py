@@ -57,6 +57,7 @@ def mantenimientoCliente():
             print(f"\t{str(row[0])}\t\t{str(row[1])}\t\t{str(row[2])}\t\t{str(row[3])}")
         input("continuar???")
         print(resConn)
+
     elif(resMenuCliente == 3):
         log.debug("buscamos cliente")
         conn = conexion.conexionBDD(4)
@@ -83,6 +84,12 @@ def mantenimientoCliente():
             print("Hubo un error")
         
         input("desea continuar???")
+
+
+
+
+
+
     elif(resMenuCliente == 4):
         print("##Creacion de un cliente##")
         print("Escriba el Nombre del Cliente")
@@ -99,8 +106,16 @@ def mantenimientoCliente():
             print("Se ejecuto correctamente")
         else:
             print("Hubo un error")
-        
         input("desea continuar???")
+
+
+
+
+
+
+        
+
+
     elif(resMenuCliente == 5):
         log.debug("eliminamos cliente")
         conn = conexion.conexionBDD(1)
